@@ -1,7 +1,11 @@
-//package com.ScrapBridge.controllers;
+//package com.KabadiHunt.controllers;
 //
-//import com.ScrapBridge.dto.*;
-//import com.ScrapBridge.services.PaymentService;
+//
+//import com.KabadiHunt.dto.ApiResponseDto;
+//import com.KabadiHunt.dto.PaymentRequestDto;
+//import com.KabadiHunt.dto.PaymentResponseDto;
+//
+//import com.KabadiHunt.services.PaymentService;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.http.HttpStatus;
 //import org.springframework.http.ResponseEntity;
@@ -20,17 +24,17 @@
 //        this.paymentService = paymentService;
 //    }
 //
-////    @PostMapping("/payment")
-////    public ResponseEntity<?> createPaymentOrder(@RequestBody PaymentRequestDto request) {
-////        try {
-////            PaymentResponseDto responseDto = paymentService.createPayment(request);
-////            return ResponseEntity.ok(responseDto);
-////        } catch (Exception e) {
-////            return ResponseEntity
-////                    .status(HttpStatus.INTERNAL_SERVER_ERROR)
-////                    .body(new ApiResponseDto(false, "Payment creation failed: " + e.getMessage()));
-////        }
-////    }
+//    @PostMapping("/payment")
+//    public ResponseEntity<?> createPaymentOrder(@RequestBody PaymentRequestDto request) {
+//        try {
+//            PaymentResponseDto responseDto = paymentService.createPayment(request);
+//            return ResponseEntity.ok(responseDto);
+//        } catch (Exception e) {
+//            return ResponseEntity
+//                    .status(HttpStatus.INTERNAL_SERVER_ERROR)
+//                    .body(new ApiResponseDto(false, "Payment creation failed: " + e.getMessage()));
+//        }
+//    }
 //
 //
 //    @GetMapping("/payment-status/{order_id}/{username}/{owner_id}/{amount}/{transaction_id}")

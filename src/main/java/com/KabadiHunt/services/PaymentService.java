@@ -1,17 +1,12 @@
-//package com.ScrapBridge.services;
+//package com.KabadiHunt.services;
 //
 //
-//import com.ScrapBridge.dto.ApiResponseDto;
-//import com.ScrapBridge.dto.PaymentRequestDto;
-//import com.ScrapBridge.dto.PaymentResponseDto;
-//import com.ScrapBridge.models.Owner;
-//import com.ScrapBridge.models.Payments;
 //
-//
-//import com.ScrapBridge.models.User;
-//import com.ScrapBridge.repositories.OwnerRepository;
-//import com.ScrapBridge.repositories.PaymentRepository;
-//import com.ScrapBridge.repositories.UserRepository;
+//import com.KabadiHunt.dto.PaymentRequestDto;
+//import com.KabadiHunt.dto.PaymentResponseDto;
+//import com.KabadiHunt.repositories.OwnerRepository;
+//import com.KabadiHunt.repositories.PaymentRepository;
+//import com.KabadiHunt.repositories.UserRepository;
 //import com.razorpay.Order;
 //import com.razorpay.RazorpayClient;
 //import com.razorpay.RazorpayException;
@@ -45,30 +40,30 @@
 //    public String getRazorpayKeyId() {
 //        return razorpayKeyId;
 //    }
-////    public PaymentResponseDto createPayment(PaymentRequestDto requestDto) {
-////        try {
-////            RazorpayClient razorpay = new RazorpayClient("rzp_test_XXXXXXX", "your_secret_key");
-////
-////            JSONObject options = new JSONObject();
-////            options.put("amount", requestDto.getAmount().multiply(BigDecimal.valueOf(100)).intValue()); // amount in paise
-////            options.put("currency", requestDto.getCurrency());
-////            options.put("receipt", "order_rcptid_" + System.currentTimeMillis());
-////            options.put("payment_capture", 1); // automatic capture
-////
-////            Order order = razorpay.orders.create(options);
-////
-////            PaymentResponseDto response = new PaymentResponseDto();
-////            response.setPaymentId(order.get("id")); // Razorpay Order ID
-////            response.setAmount(requestDto.getAmount());
-////            response.setCurrency(requestDto.getCurrency());
-////            response.setApiKey("rzp_test_XXXXXXX"); // Razorpay public key for frontend
-////
-////            return response;
-////
-////        } catch (RazorpayException e) {
-////            throw new RuntimeException("Failed to create Razorpay order", e);
-////        }
-////    }
+//    public PaymentResponseDto createPayment(PaymentRequestDto requestDto) {
+//        try {
+//            RazorpayClient razorpay = new RazorpayClient("rzp_test_XXXXXXX", "your_secret_key");
+//
+//            JSONObject options = new JSONObject();
+//            options.put("amount", requestDto.getAmount().multiply(BigDecimal.valueOf(100)).intValue()); // amount in paise
+//            options.put("currency", requestDto.getCurrency());
+//            options.put("receipt", "order_rcptid_" + System.currentTimeMillis());
+//            options.put("payment_capture", 1); // automatic capture
+//
+//            Order order = razorpay.orders.create(options);
+//
+//            PaymentResponseDto response = new PaymentResponseDto();
+//            response.setPaymentId(order.get("id")); // Razorpay Order ID
+//            response.setAmount(requestDto.getAmount());
+//            response.setCurrency(requestDto.getCurrency());
+//            response.setApiKey("rzp_test_XXXXXXX"); // Razorpay public key for frontend
+//
+//            return response;
+//
+//        } catch (RazorpayException e) {
+//            throw new RuntimeException("Failed to create Razorpay order", e);
+//        }
+//    }
 //
 //    @Transactional
 //    public ApiResponseDto processPaymentStatus(String orderId, String userId, String ownerId,

@@ -3,18 +3,18 @@ package com.KabadiHunt.dto;
 import java.math.BigDecimal;
 
 public class PaymentResponseDto {
-    private String paymentId;    // Razorpay order ID
+    private String orderId;    // Razorpay order ID
     private BigDecimal amount;  // Amount in rupees
     private String currency;
     private String apiKey;      // Razorpay public key
 
     // Getters and Setters
     public String getPaymentId() {
-        return paymentId;
+        return orderId;
     }
 
     public void setPaymentId(String paymentId) {
-        this.paymentId = paymentId;
+        this.orderId = paymentId;
     }
 
     public BigDecimal getAmount() {
